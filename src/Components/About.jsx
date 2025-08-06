@@ -5,11 +5,10 @@ import avatar from '/src/assets/avatar.png';
 
 function About() {
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen pt-12">
+    <div className="flex items-center justify-center flex-col min-h-screen pt-13">
       <Header />
-        <h2 className="font-bold text-4xl">About Me</h2>
       <motion.div
-        className="mt-5 w-[65vw] p-7 flex flex-col md:flex-row justify-around items-center px-3"
+        className=" w-[65vw] flex flex-col md:flex-row justify-evenly items-center px-3"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -63,7 +62,7 @@ function About() {
       </motion.div>
 
       <motion.div
-        className="p-10"
+        className="py-7"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
@@ -71,7 +70,7 @@ function About() {
         <a
           href="src/assets/Resume.pdf"
           download
-          className="relative inline-flex items-center gap-3 overflow-hidden rounded-full border-2 border-blue-600 bg-blue-600 px-6 py-3 text-white font-semibold transition-all duration-300 group hover:bg-blue-700 hover:shadow-lg"
+          className="relative inline-flex items-center gap-2 overflow-hidden rounded-full border-2 border-blue-600 bg-blue-600 px-6 py-3 text-white font-semibold transition-all duration-300 group hover:bg-blue-700 hover:shadow-lg"
         >
           <span className="absolute inset-0 bg-white opacity-10 transition-all duration-500 scale-0 group-hover:scale-100 rounded-full"></span>
           <span className="relative z-10">Download Resume</span>

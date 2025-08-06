@@ -75,17 +75,15 @@ const currentPath = location.pathname;
           menuOpen ? "max-h-screen py-4" : "max-h-0"
         } gap-4`}
       >
-        {navLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            className={`link-underline ${
-              activeLink === link.href ? "active" : ""
-            }`}
-            onClick={() => handleLinkClick(link.href)}
-          >
-            {link.name}
-          </a>
+       {navLinks.map((link) => (
+  <Link
+    key={link.to}
+    to={link.to}
+    className={`link-underline ${currentPath === link.to ? "active" : ""}`}
+    onClick={() => handleLinkClick(link.to)}
+  >
+    {link.name}
+  </Link>
         ))}
         <DarkModeToggle
           onChange={setIsDarkMode}
