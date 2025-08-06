@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding-bottom: 4px;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #22d3ee; 
+  transition: width 0.3s ease-in-out;
+}
+
+.link-underline:hover::after {
+  width: 25%;
+}
+
+.link-underline.active::after {
+  width: 100%;
+}
+
+body.dark {
+  background-color: #070606;
+  color: white;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: black;
+}
+
