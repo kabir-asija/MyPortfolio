@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
-import avatar from '/src/assets/avatar.png';
+import avatar from "/src/assets/avatar.png";
 
 function About() {
   return (
@@ -47,8 +47,7 @@ function About() {
               &nbsp;&nbsp;Name: <span className="text-green-400">'Kabir'</span>,
               {"\n"}
               &nbsp;&nbsp;DOB:{" "}
-              <span className="text-green-400">'04/11/2005'</span>,
-              {"\n"}
+              <span className="text-green-400">'04/11/2005'</span>,{"\n"}
               &nbsp;&nbsp;Email:{" "}
               <span className="text-green-400">'kabirasija3@gmail.com'</span>,
               {"\n"}
@@ -68,7 +67,7 @@ function About() {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <a
-          href="src/assets/Resume.pdf"
+          href="/Resume.pdf"
           download
           className="relative inline-flex items-center gap-2 overflow-hidden rounded-full border-2 border-blue-600 bg-blue-600 px-6 py-3 text-white font-semibold transition-all duration-300 group hover:bg-blue-700 hover:shadow-lg"
         >
