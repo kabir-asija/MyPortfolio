@@ -1,8 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
+
   return (
     <>
       <Header />
@@ -18,13 +26,12 @@ const Contact = () => {
 
         <motion.form
           className="w-full max-w-sm shadow-[5px_5px_29px_-13px_#464646] border border-[#838383] p-6 rounded-lg flex flex-col gap-4"
-          action=""
+          onSubmit={handleSubmit}
           method=""
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          
           <div className="flex flex-col text-left">
             <label htmlFor="name" className="text-sm mb-1 font-medium">
               Name
@@ -54,12 +61,9 @@ const Contact = () => {
                 maxlength="30"
               />
             </label>
-            <p className="validator-hint hidden">
-              Enter a valid name
-            </p>
+            <p className="validator-hint hidden">Enter a valid name</p>
           </div>
 
-          
           <div className="flex flex-col text-left">
             <label htmlFor="email" className="text-sm mb-1 font-medium">
               Email
@@ -92,7 +96,10 @@ const Contact = () => {
             <label htmlFor="message" className="text-sm mb-1 font-medium">
               Message
             </label>
-           <textarea className="textarea  bg-white text-black" placeholder="Message"></textarea>
+            <textarea
+              className="textarea  bg-white text-black"
+              placeholder="Message"
+            ></textarea>
           </div>
 
           <button

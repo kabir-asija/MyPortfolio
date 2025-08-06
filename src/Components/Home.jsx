@@ -43,7 +43,7 @@ const Home = () => {
         transition={{ delay: 1, duration: 0.8 }}
       >
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/kabir-asija"
           target="_blank"
           rel="noopener noreferrer"
           className="text-2xl hover:text-cyan-400 transition duration-300"
@@ -51,7 +51,7 @@ const Home = () => {
           <FaGithub className="hover:drop-shadow-[0_0_10px_#67e8f9]" />
         </a>
         <a
-          href="https://linkedin.com/in/your-linkedin"
+          href="https://linkedin.com/in/kabirasija"
           target="_blank"
           rel="noopener noreferrer"
           className="text-2xl hover:text-cyan-400 transition duration-300"
@@ -59,7 +59,7 @@ const Home = () => {
           <FaLinkedinIn className="hover:drop-shadow-[0_0_10px_#67e8f9]" />
         </a>
         <a
-          href="mailto:your@email.com"
+          href="mailto:kabirasija3@gmail.com"
           className="text-2xl hover:text-cyan-400 transition duration-300"
         >
           <HiOutlineMail className="hover:drop-shadow-[0_0_10px_#67e8f9]" />
