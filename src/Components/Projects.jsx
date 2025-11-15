@@ -2,8 +2,8 @@ import React from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
 import portfolio from '/src/assets/portfolio.png';
-import gif from '/src/assets/gif.png';
 import shopease from '/src/assets/shopease.png';
+import github from '/src/assets/github.png';
 
 const projects = [
   {
@@ -16,11 +16,11 @@ const projects = [
   },
   {
     id: 2,
-    img: gif,
-    title: "GIF Search App",
-    desc: "A fast and dynamic GIF Search App that allows users to easily search, preview, and copy GIF links effortlessly.",
-    github: "https://github.com/kabir-asija/Gif-Search-App",
-    live: "https://kabir-asija.github.io/Gif-Search-App/"
+    img: github,
+    title: "Resumify",
+    desc: "A Resume builder web app that allows users to create, customize, and download professional resumes effortlessly",
+    github: "https://github.com/kabir-asija/Resumify",
+    live: "https://resumify-v2d4.onrender.com"
   },
   {
     id: 3,
