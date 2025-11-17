@@ -67,7 +67,7 @@ function About() {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <a
-          href="/MyPortfolio/Resume.pdf"
+          href="https://drive.google.com/file/d/1jNUcV0uQLz4ec7Dx3gReGkB9kalPUgca/view?usp=sharing"
           download
           className="relative inline-flex items-center gap-2 overflow-hidden rounded-full border-2 border-blue-600 bg-blue-600 px-6 py-3 text-white font-semibold transition-all duration-300 group hover:bg-blue-700 hover:shadow-lg"
         >
