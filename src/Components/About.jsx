@@ -66,9 +66,9 @@ function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/MyPortfolio/Resume.pdf" target="_blank" rel="noopener noreferrer"
           className="relative inline-flex items-center gap-2 overflow-hidden rounded-full border-2 border-blue-600 bg-blue-600 px-6 py-3 text-white font-semibold transition-all duration-300 group hover:bg-blue-700 hover:shadow-lg"
-        >
+          >
           <span className="absolute inset-0 bg-white opacity-10 transition-all duration-500 scale-0 group-hover:scale-100 rounded-full"></span>
           <span className="relative z-10">Resume</span>
         </a>
